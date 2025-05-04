@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Screen.SetResolution(Screen.width / 2, Screen.height / 2, true);
+        Screen.SetResolution(Screen.currentResolution.width / 2, Screen.currentResolution.height/ 2, true);
     }
 
     public async UniTaskVoid SetGameState(GameState newGameState,float delay)
